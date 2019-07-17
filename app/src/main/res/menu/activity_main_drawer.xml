@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_graduationMaths"
+            android:icon="@drawable/bread_and_rolling_in"
+            android:title="Graduation Maths"/>
+        <item
+            android:id="@+id/nav_HSMaths"
+            android:icon="@drawable/cake"
+            android:title="Higher School Maths" />
+        <item
+            android:id="@+id/nav_reasoning"
+            android:icon="@drawable/french_fries"
+            android:title="Reasoning" />
+        <item
+            android:id="@+id/nav_computerKnowledge"
+            android:icon="@drawable/oven_mitten"
+            android:title="Computer" />
+        <item
+            android:id="@+id/nav_english"
+            android:icon="@drawable/tin_can"
+            android:title="English" />
+
+        <item android:title="More Options">
+        <menu>
+            <item
+                android:icon="@drawable/calendar_icon"
+                android:title="Calendar" />
+            <item
+                android:icon="@drawable/countdown"
+                android:title="CountDown" />
+        </menu>
+    </item>
+
+
+</group>
+
+</menu>
