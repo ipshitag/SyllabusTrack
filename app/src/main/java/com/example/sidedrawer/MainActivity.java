@@ -91,7 +91,8 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_subjectOne)
         {
-            fragmentManager.beginTransaction().replace(R.id.mainFrame,new firstSubjectFragment()).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_main,new firstSubjectFragment()).commit();
+
         }
         else if (id == R.id.nav_subjectTwo)
         {
