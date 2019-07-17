@@ -1,5 +1,6 @@
 package com.example.sidedrawer;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -86,16 +87,34 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        FragmentManager fragmentManager = getFragmentManager();
 
-        if (id == R.id.nav_graduationMaths) {
-            // Handle the camera action
-        } else if (id == R.id.nav_HSMaths) {
+        if (id == R.id.nav_subjectOne)
+        {
+            fragmentManager.beginTransaction().replace(R.id.mainFrame,new firstSubjectFragment()).commit();
+        }
+        else if (id == R.id.nav_subjectTwo)
+        {
 
-        } else if (id == R.id.nav_reasoning) {
+        }
+        else if (id == R.id.nav_subjectThree)
+        {
 
-        } else if (id == R.id.nav_english) {
+        }
+        else if (id == R.id.nav_subjectFour)
+        {
 
-        } else if (id == R.id.nav_computerKnowledge) {
+        }
+        else if (id == R.id.nav_subjectFive)
+        {
+
+        }
+        else if (id == R.id.addOne)
+        {
+
+        }
+        else if (id == R.id.addTwo)
+        {
 
         }
 

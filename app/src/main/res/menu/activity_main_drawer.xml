@@ -6,32 +6,34 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_graduationMaths"
+            android:id="@+id/nav_subjectOne"
             android:icon="@drawable/bread_and_rolling_in"
             android:title="Graduation Maths"/>
         <item
-            android:id="@+id/nav_HSMaths"
+            android:id="@+id/nav_subjectTwo"
             android:icon="@drawable/cake"
             android:title="Higher School Maths" />
         <item
-            android:id="@+id/nav_reasoning"
+            android:id="@+id/nav_subjectThree"
             android:icon="@drawable/french_fries"
             android:title="Reasoning" />
         <item
-            android:id="@+id/nav_computerKnowledge"
+            android:id="@+id/nav_subjectFour"
             android:icon="@drawable/oven_mitten"
             android:title="Computer" />
         <item
-            android:id="@+id/nav_english"
+            android:id="@+id/nav_subjectFive"
             android:icon="@drawable/tin_can"
             android:title="English" />
 
         <item android:title="More Options">
         <menu>
             <item
+                android:id="@+id/addOne"
                 android:icon="@drawable/calendar_icon"
                 android:title="Calendar" />
             <item
+                android:id="@+id/addTwo"
                 android:icon="@drawable/countdown"
                 android:title="CountDown" />
         </menu>
