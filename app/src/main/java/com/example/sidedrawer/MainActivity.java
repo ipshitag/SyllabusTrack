@@ -1,9 +1,9 @@
 package com.example.sidedrawer;
 
 import android.app.FragmentManager;
-import androidx.fragment.app.Fragment;
+import android.app.Fragment;
+//import androidx.fragment.app.Fragment;
 
-import android.app.FragmentTransaction;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -22,7 +22,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+//import androidx.fragment.app.Fragment;
 
 import android.view.Menu;
 
@@ -92,10 +93,13 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         Fragment fragment = null;
 
         if (id == R.id.nav_subjectOne)
         {
+            //transaction.replace(R.id.content_frame,new firstSubjectFragment());
+            //transaction.addToBackStack(null);
             fragmentManager.beginTransaction().replace(R.id.content_frame,new firstSubjectFragment()).commit();
             //fragment = new firstSubjectFragment();
 
@@ -145,6 +149,7 @@ public class MainActivity extends AppCompatActivity
                     .replace(R.id.content_frame
                             , new twoAdditionalFragment())
                     .commit();
+
 
         }
 
