@@ -1,6 +1,9 @@
 package com.example.sidedrawer;
 
 import android.app.FragmentManager;
+import androidx.fragment.app.Fragment;
+
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -19,6 +22,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
 
 import android.view.Menu;
 
@@ -88,34 +92,59 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         FragmentManager fragmentManager = getFragmentManager();
+        Fragment fragment = null;
 
         if (id == R.id.nav_subjectOne)
         {
-            fragmentManager.beginTransaction().replace(R.id.content_main,new firstSubjectFragment()).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_frame,new firstSubjectFragment()).commit();
+            //fragment = new firstSubjectFragment();
 
         }
         else if (id == R.id.nav_subjectTwo)
         {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new secondSubjectFragment())
+                    .commit();
 
         }
         else if (id == R.id.nav_subjectThree)
         {
-
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new thirdSubjectFragment())
+                    .commit();
         }
         else if (id == R.id.nav_subjectFour)
         {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new fourthSubjectFragment())
+                    .commit();
 
         }
         else if (id == R.id.nav_subjectFive)
         {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new fiveSubjectFragment())
+                    .commit();
 
         }
         else if (id == R.id.addOne)
         {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new oneAdditionalFragment())
+                    .commit();
 
         }
         else if (id == R.id.addTwo)
         {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new twoAdditionalFragment())
+                    .commit();
 
         }
 
