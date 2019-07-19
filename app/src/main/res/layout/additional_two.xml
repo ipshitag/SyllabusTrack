@@ -9,7 +9,7 @@
         android:text="@string/additional_two"
         android:layout_gravity="center"
         android:textSize="30sp"
-        android:textColor="#9F00FF"
+        android:textColor="#EE231C"
         android:layout_centerInParent = "true"/>
 
 </RelativeLayout>

@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <item
+        android:id="@+id/checkBox1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/additional_one"
-        android:layout_gravity="center"
-        android:textSize="30sp"
-        android:textColor="#F05e23"
-        android:layout_centerInParent = "true"/>
+        android:text="CheckBox" />
 
-</RelativeLayout>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Concept of sets – Union, Intersection, Cardinality, Elementary counting; permutations and combinations."/>
+    </ListView>
+
+
+</LinearLayout>

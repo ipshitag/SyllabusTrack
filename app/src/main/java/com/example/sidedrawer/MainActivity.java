@@ -26,6 +26,9 @@ import androidx.fragment.app.FragmentTransaction;
 //import androidx.fragment.app.Fragment;
 
 import android.view.Menu;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -33,6 +36,11 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        String[] maths1 = {"Set Theory", "Probablity and Statistics", "Algebra", "Co-ordinate Geometry","Calculus","Trigonometry","Vectors"};
+        ListAdapter listAdapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1,maths1);
+        ListView listView1 = (ListView) findViewById(R.id.suboneList);
+        listView1.setAdapter(listAdapter1);
 
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
