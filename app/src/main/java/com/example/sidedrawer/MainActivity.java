@@ -37,11 +37,11 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.subject_one);
-        String[] maths1 = {"Set Theory", "Probablity and Statistics", "Algebra", "Co-ordinate Geometry","Calculus","Trigonometry","Vectors"};
-        ListAdapter listAdapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1,maths1);
-        ListView listView1 = (ListView) findViewById(R.id.suboneList);
-        listView1.setAdapter(listAdapter1);
+        //setContentView(R.layout.subject_one);
+        //String[] maths1 = {"Set Theory", "Probablity and Statistics", "Algebra", "Co-ordinate Geometry","Calculus","Trigonometry","Vectors"};
+        //ListAdapter listAdapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1,maths1);
+        //ListView listView1 = (ListView) findViewById(R.id.suboneList);
+        //listView1.setAdapter(listAdapter1);
 
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
