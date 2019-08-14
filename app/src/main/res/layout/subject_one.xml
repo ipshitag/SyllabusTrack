@@ -8,37 +8,45 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculus"/>
+        android:id="@+id/check_differentiation"
+        android:text="Differentiation">
+    </CheckBox>
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculus"/>
+        android:id="@+id/check_integration"
+        android:text="Integration"/>
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculus"/>
+        android:id="@+id/check_applications"
+        android:text="Calculus Application"/>
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculus"/>
+        android:id="@+id/check_relationfunction"
+        android:text="Relation and Function"/>
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculus"/>
+        android:id="@+id/check_vectors"
+        android:text="Vectors"/>
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/check_trigonometry"
         android:text="Calculus" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculus" />
+        android:id="@+id/check_sets"
+        android:text="Sets" />
 
 
 </LinearLayout>
