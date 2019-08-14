@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,24 +9,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/checkbox1"
+        android:checked="false"
         android:text="Differentiation">
     </CheckBox>
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:checked="false"
         android:id="@+id/checkbox2"
         android:text="Integration"/>
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:checked="false"
         android:id="@+id/checkbox3"
         android:text="Calculus Application"/>
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:checked="false"
         android:id="@+id/checkbox4"
         android:text="Relation and Function"/>
 
@@ -41,15 +43,16 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:checked="false"
         android:id="@+id/checkbox6"
         android:text="Calculus" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:checked="false"
         android:id="@+id/checkbox7"
         android:text="Sets" />
 
 
 </LinearLayout>
-</layout>
