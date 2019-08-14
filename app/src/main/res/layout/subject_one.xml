@@ -10,6 +10,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/checkbox1"
         android:checked="false"
+        android:onClick="onCheckboxClicked"
+        android:layout_marginBottom="20dp"
         android:text="Differentiation">
     </CheckBox>
 
@@ -17,6 +19,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="false"
+        android:onClick="onCheckboxClicked"
+        android:layout_marginBottom="20dp"
         android:id="@+id/checkbox2"
         android:text="Integration"/>
 
@@ -24,35 +28,53 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="false"
+        android:onClick="onCheckboxClicked"
         android:id="@+id/checkbox3"
+        android:layout_marginBottom="20dp"
         android:text="Calculus Application"/>
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="false"
+        android:layout_marginBottom="20dp"
+        android:onClick="onCheckboxClicked"
         android:id="@+id/checkbox4"
         android:text="Relation and Function"/>
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
         android:id="@+id/checkbox5"
+        android:layout_marginBottom="20dp"
         android:text="Vectors"/>
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="false"
+        android:onClick="onCheckboxClicked"
+        android:layout_marginBottom="20dp"
         android:id="@+id/checkbox6"
         android:text="Calculus" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
         android:checked="false"
+        android:layout_marginBottom="20dp"
         android:id="@+id/checkbox7"
         android:text="Sets" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:onClick="onCheckboxClicked"
+        android:text="ok"
+        android:layout_marginTop="60dp"/>
 
 
 </LinearLayout>
